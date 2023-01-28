@@ -1,6 +1,7 @@
 package com.mightcell.reggie.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.mightcell.reggie.common.BaseContext;
 import com.mightcell.reggie.common.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.AntPathMatcher;
@@ -49,6 +50,8 @@ public class loginCheckFilter implements Filter {
 
 //        如果已经登录，直接放行
         if (request.getSession().getAttribute("employee") != null) {
+            Long id = (Long) request.getSession().getAttribute("employee");
+            BaseContext.setCurrentId(id);
             filterChain.doFilter(request, response);
             return;
         }
