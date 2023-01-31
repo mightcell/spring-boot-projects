@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="867fa901-22fc-459a-87b8-af0a175726a8" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/common/BaseContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/common/JacksonObjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/common/MyMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/impl/CategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/filter/loginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/filter/loginCheckFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="corretto-1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test-projects" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -137,7 +133,10 @@
       <workItem from="1674806736659" duration="3019000" />
       <workItem from="1674809884503" duration="10992000" />
       <workItem from="1674903384320" duration="1192000" />
-      <workItem from="1674905536877" duration="2358000" />
+      <workItem from="1674905536877" duration="2596000" />
+      <workItem from="1675060924595" duration="1000" />
+      <workItem from="1675155562586" duration="103000" />
+      <workItem from="1675156134538" duration="2003000" />
     </task>
     <servers />
   </component>
