@@ -36,7 +36,8 @@ public class loginCheckFilter implements Filter {
                 "/employee/login",          // 放行登录页面
                 "employee/logout",          // 放行退出页面
                 "/backend/**",              // 静态页面资源
-                "/front/**"
+                "/front/**",
+                "/common/**"
         };
 
 //        判断本次请求是否需要处理，是否存在于上述定义的数组
