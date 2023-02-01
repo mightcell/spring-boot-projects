@@ -2,12 +2,17 @@ package com.mightcell.reggie.controller;
 
 import com.mightcell.reggie.common.R;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.UUID;
 
@@ -43,7 +48,7 @@ public class CommonController {
         if (!dir.exists()) {
 //            目录不存在，需要创建
             dir.mkdir();
-        } 
+        }
 
 //        文件转存
         try {
@@ -53,5 +58,36 @@ public class CommonController {
             e.printStackTrace();
         }
         return R.success(fileName);
+    }
+
+    /**
+     * 文件下载
+     *
+     * @param name
+     * @param resp
+     */
+    @GetMapping("/download")
+    public void download(String name, HttpServletResponse resp) {
+//        输入流，通过输入流读取文件内容
+        try {
+            FileInputStream fileInputStream = new FileInputStream(new File(basePath + name));
+//            输出流，通过输出流写回浏览器
+            ServletOutputStream outputStream = resp.getOutputStream();
+
+            resp.setContentType("image/jpeg");
+
+            byte[] bytes = new byte[1024];
+            int length = 0;
+            while ((length = fileInputStream.read(bytes)) != -1) {
+                outputStream.write(bytes, 0, length);
+                outputStream.flush();
+            }
+//            关闭资源
+            outputStream.close();
+            fileInputStream.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }
