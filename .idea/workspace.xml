@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="867fa901-22fc-459a-87b8-af0a175726a8" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/dto/DishDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/ReggieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/ReggieApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/DishService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/impl/DishServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +138,7 @@
       <workItem from="1675156134538" duration="8030000" />
       <workItem from="1675234916072" duration="1802000" />
       <workItem from="1675237005091" duration="3703000" />
-      <workItem from="1675328735382" duration="5267000" />
+      <workItem from="1675328735382" duration="8239000" />
     </task>
     <servers />
   </component>
