@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="867fa901-22fc-459a-87b8-af0a175726a8" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/mapper/DishFlavorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/DishFlavorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/CategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/CommonController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +141,8 @@
       <workItem from="1675155562586" duration="103000" />
       <workItem from="1675156134538" duration="8030000" />
       <workItem from="1675234916072" duration="1802000" />
-      <workItem from="1675237005091" duration="3659000" />
+      <workItem from="1675237005091" duration="3703000" />
+      <workItem from="1675328735382" duration="1682000" />
     </task>
     <servers />
   </component>

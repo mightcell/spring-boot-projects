@@ -8,6 +8,8 @@ import com.mightcell.reggie.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * 分类管理
  */
@@ -73,5 +75,20 @@ public class CategoryController {
     public R<String> update(@RequestBody Category category) {
         service.updateById(category);
         return R.success("修改分类信息成功");
+    }
+
+    /**
+     * 获取分类信息
+     * @param category
+     * @return
+     */
+    @GetMapping("/list")
+    public R<List<Category>> list(Category category) {
+//        条件构造器
+        LambdaQueryWrapper<Category> categoryLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        categoryLambdaQueryWrapper.eq(category.getType() != null, Category::getType, category.getType());
+        categoryLambdaQueryWrapper.orderByAsc(Category::getSort).orderByDesc(Category::getUpdateTime);
+        List<Category> list = service.list(categoryLambdaQueryWrapper);
+        return R.success(list);
     }
 }
