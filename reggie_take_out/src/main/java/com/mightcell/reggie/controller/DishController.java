@@ -53,7 +53,7 @@ public class DishController {
      */
     @GetMapping("/page")
     public R<Page> page(int page, int pageSize, String name) {
-        Page<Dish> pageInfo = new Page<>();
+        Page<Dish> pageInfo = new Page<>(page, pageSize);
         Page<DishDto> dishDtoPage = new Page<>();
 
         LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
@@ -77,9 +77,35 @@ public class DishController {
             dishDto.setCategoryName(byIdName);
             dishDtos.add(dishDto);
         }
-        
+
         dishDtoPage.setRecords(dishDtos);
 
         return R.success(dishDtoPage);
     }
+
+    /**
+     * 根据ID获取菜品数据及其口味
+     * @param id
+     * @return 菜品数据及相关口味信息
+     */
+    @GetMapping("/{id}")
+    public R<DishDto> get(@PathVariable Long id) {
+        DishDto dishDto = dishService.getByIdWithFlavor(id);
+        return R.success(dishDto);
+    }
+
+    /**
+     * 修改菜品
+     * @param dishDto
+     * @return 成功响应
+     */
+    @PutMapping
+    public R<String> update(@RequestBody DishDto dishDto) {
+        dishService.updateWithFlavor(dishDto);
+        return R.success("新增菜品成功");
+    }
+
+
+
+
 }

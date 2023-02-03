@@ -21,7 +21,7 @@ public class CategoryController {
     private CategoryService service;
 
     /**
-     * 新增分类
+     * 新增分类（菜品与套餐）
      *
      * @param category
      * @return 成功响应
@@ -31,6 +31,7 @@ public class CategoryController {
         service.save(category);
         return R.success("新增分类成功");
     }
+
 
     /**
      * 分页查询
@@ -80,7 +81,7 @@ public class CategoryController {
     /**
      * 获取分类信息
      * @param category
-     * @return
+     * @return 页面数据
      */
     @GetMapping("/list")
     public R<List<Category>> list(Category category) {
