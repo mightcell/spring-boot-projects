@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/reggie_take_out/reggie_take_out.iml" filepath="$PROJECT_DIR$/reggie_take_out/reggie_take_out.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-boot-projects.iml" filepath="$PROJECT_DIR$/.idea/spring-boot-projects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_security_quick_start/spring-security-quick-start.iml" filepath="$PROJECT_DIR$/spring_security_quick_start/spring-security-quick-start.iml" />
     </modules>
   </component>
 </project>
