@@ -9,6 +9,7 @@ import com.mightcell.reggie.entity.Setmeal;
 import com.mightcell.reggie.service.CategoryService;
 import com.mightcell.reggie.service.SetmealDishService;
 import com.mightcell.reggie.service.SetmealService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+@Slf4j
 @RestController
 @RequestMapping("/setmeal")
 public class SetmealController {
@@ -76,6 +78,17 @@ public class SetmealController {
         setmealDtoPage.setRecords(setmealDtos);
 
         return R.success(setmealDtoPage);
+    }
+
+    /**
+     * 删除套餐及其关联数据
+     * @param ids
+     * @return 成功响应信息
+     */
+    @DeleteMapping
+    public R<String> delete(@RequestParam List<Long> ids) {
+        setmealService.removeWithDish(ids);
+        return R.success("套餐数据删除成功");
     }
 
 }
