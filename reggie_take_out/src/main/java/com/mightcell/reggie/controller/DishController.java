@@ -106,6 +106,23 @@ public class DishController {
     }
 
 
+    /**
+     * 根据条件查询对应菜品数据
+     * @param dish
+     * @return 菜品列表数据
+     */
+    @GetMapping("/list")
+    public R<List<Dish>> list(Dish dish) {
+//        构造查询条件对象
+        LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        dishLambdaQueryWrapper.eq(Dish::getStatus, 1);
+        dishLambdaQueryWrapper.eq(dish.getCategoryId() != null, Dish::getCategoryId, dish.getCategoryId());
+        dishLambdaQueryWrapper.orderByAsc(Dish::getUpdateTime).orderByDesc(Dish::getUpdateTime);
+        List<Dish> list = dishService.list(dishLambdaQueryWrapper);
+        return R.success(list);
+    }
+
+
 
 
 }
