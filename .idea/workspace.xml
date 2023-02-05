@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="867fa901-22fc-459a-87b8-af0a175726a8" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/spring_security_quick_start/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_security_quick_start/src/main/java/com/mightcell/SecurityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_security_quick_start/src/main/java/com/mightcell/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_security_quick_start/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_security_quick_start/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -161,7 +160,7 @@
       <workItem from="1675237005091" duration="3703000" />
       <workItem from="1675328735382" duration="9975000" />
       <workItem from="1675412306927" duration="6202000" />
-      <workItem from="1675502345150" duration="9183000" />
+      <workItem from="1675502345150" duration="10909000" />
     </task>
     <servers />
   </component>
