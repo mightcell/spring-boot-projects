@@ -52,6 +52,12 @@ public class UserController {
     }
 
 
+    /**
+     * 用户登录
+     * @param user
+     * @param httpSession
+     * @return 登录用户
+     */
     @PostMapping("/login")
     public R<User> login(@RequestBody Map user, HttpSession httpSession) {
 //        获取手机号
