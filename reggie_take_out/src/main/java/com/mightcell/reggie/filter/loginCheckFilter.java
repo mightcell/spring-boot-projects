@@ -37,7 +37,9 @@ public class loginCheckFilter implements Filter {
                 "employee/logout",          // 放行退出页面
                 "/backend/**",              // 静态页面资源
                 "/front/**",
-                "/common/**"
+                "/common/**",
+                "/user/sendMsg",            // 移动端发送短信
+                "/user/login"               // 移动端登录
         };
 
 //        判断本次请求是否需要处理，是否存在于上述定义的数组
@@ -56,6 +58,15 @@ public class loginCheckFilter implements Filter {
             filterChain.doFilter(request, response);
             return;
         }
+
+        if (request.getSession().getAttribute("user") != null) {
+            Long id = (Long) request.getSession().getAttribute("user");
+            BaseContext.setCurrentId(id);
+            filterChain.doFilter(request, response);
+            return;
+        }
+
+
 
 //        如果没有登录，通过输出流的方式向客户端页面响应数据
         response.getWriter().write(JSON.toJSONString(R.error("NOTLOGIN")));
