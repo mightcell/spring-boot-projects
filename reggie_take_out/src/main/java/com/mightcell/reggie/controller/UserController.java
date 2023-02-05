@@ -1,5 +1,6 @@
 package com.mightcell.reggie.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.mightcell.reggie.common.R;
 import com.mightcell.reggie.entity.User;
 import com.mightcell.reggie.service.UserService;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
@@ -42,7 +44,7 @@ public class UserController {
             log.info("code={}", code);
 
             //        将生成的验证码保存到session中
-            httpSession.setAttribute(phone, code);
+            httpSession.setAttribute("phone", code);
             return R.success("手机验证码短信发送成功");
         }
 
@@ -51,8 +53,30 @@ public class UserController {
 
 
     @PostMapping("/login")
-    public R<String> login() {
+    public R<User> login(@RequestBody Map user, HttpSession httpSession) {
+//        获取手机号
+        String phone = user.get("phone").toString();
+//        获取验证码
+        String code = user.get("code").toString();
+//        从session中获取保存的验证码
+        Object codeInSession = httpSession.getAttribute("phone");
+//        验证码比对
+        if (codeInSession != null && codeInSession.equals(code)) {
+            //        判断当前手机号用户是否为新用户，如果为新用户则添加为新用户
+            LambdaQueryWrapper<User> queryWrapper = new LambdaQueryWrapper<>();
+            queryWrapper.eq(User::getPhone, phone);
+            User userObj = userService.getOne(queryWrapper);
+            if (userObj == null) {
+//                自动注册
+                userObj = new User();
+                userObj.setPhone(phone);
+                userService.save(userObj);
+            }
+            httpSession.setAttribute("user", userObj.getId());
+            return R.success(userObj);
+        }
 
-        return null;
+
+        return R.error("登录失败");
     }
 }

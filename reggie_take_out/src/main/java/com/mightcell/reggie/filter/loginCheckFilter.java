@@ -70,7 +70,6 @@ public class loginCheckFilter implements Filter {
 
 //        如果没有登录，通过输出流的方式向客户端页面响应数据
         response.getWriter().write(JSON.toJSONString(R.error("NOTLOGIN")));
-        return;
 
     }
 

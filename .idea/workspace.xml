@@ -5,36 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="867fa901-22fc-459a-87b8-af0a175726a8" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_4_5_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_opentracing_api_0_33_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_opentracing_noop_0_33_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentracing_opentracing_util_0_33_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ini4j_ini4j_0_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_org_jacoco_agent_runtime_0_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/utils/SMSUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/utils/ValidateCodeUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/filter/loginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/filter/loginCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/api/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/js/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/js/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/page/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/page/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/target/classes/front/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/target/classes/front/api/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/target/classes/front/js/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/target/classes/front/js/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/target/classes/front/page/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/target/classes/front/page/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +170,7 @@
       <workItem from="1675328735382" duration="9975000" />
       <workItem from="1675412306927" duration="6202000" />
       <workItem from="1675502345150" duration="10909000" />
-      <workItem from="1675573829468" duration="5467000" />
+      <workItem from="1675573829468" duration="6438000" />
     </task>
     <servers />
   </component>
