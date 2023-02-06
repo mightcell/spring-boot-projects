@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="867fa901-22fc-459a-87b8-af0a175726a8" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/AddressBookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/mapper/AddressBookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/AddressBookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/impl/AddressBookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/cartData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/api/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reggie_take_out/target/classes/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/target/classes/front/api/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="corretto-1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/reggie_take_out/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/reggie_take_out/src/main/resources/front" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -89,11 +88,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\Java\spring-boot-projects\reggie_take_out\src\main\resources\front" />
       <recent name="D:\Code\Java\spring-boot-projects\reggie_take_out\src\main\resources" />
       <recent name="D:\Code\Java\spring-boot-projects\reggie_take_out\src\main\java\com\mightcell\reggie\utils" />
       <recent name="D:\Code\Java\spring-boot-projects\reggie_take_out\src\main\java\com\mightcell\reggie\dto" />
       <recent name="D:\Code\Java\spring-boot-projects\reggie_take_out\src\main\resources\backend\page\demo" />
-      <recent name="D:\Code\Java\spring-boot-projects\reggie_take_out\src\main\java\com\mightcell\reggie\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -174,7 +173,8 @@
       <workItem from="1675328735382" duration="9975000" />
       <workItem from="1675412306927" duration="6202000" />
       <workItem from="1675502345150" duration="10909000" />
-      <workItem from="1675573829468" duration="9647000" />
+      <workItem from="1675573829468" duration="11728000" />
+      <workItem from="1675682538472" duration="2232000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,7 @@ import com.mightcell.reggie.common.R;
 import com.mightcell.reggie.dto.DishDto;
 import com.mightcell.reggie.entity.Category;
 import com.mightcell.reggie.entity.Dish;
+import com.mightcell.reggie.entity.DishFlavor;
 import com.mightcell.reggie.service.CategoryService;
 import com.mightcell.reggie.service.DishFlavorService;
 import com.mightcell.reggie.service.DishService;
@@ -112,14 +113,28 @@ public class DishController {
      * @return 菜品列表数据
      */
     @GetMapping("/list")
-    public R<List<Dish>> list(Dish dish) {
+    public R<List<DishDto>> list(Dish dish) {
 //        构造查询条件对象
         LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
         dishLambdaQueryWrapper.eq(Dish::getStatus, 1);
         dishLambdaQueryWrapper.eq(dish.getCategoryId() != null, Dish::getCategoryId, dish.getCategoryId());
         dishLambdaQueryWrapper.orderByAsc(Dish::getUpdateTime).orderByDesc(Dish::getUpdateTime);
+
         List<Dish> list = dishService.list(dishLambdaQueryWrapper);
-        return R.success(list);
+        ArrayList<DishDto> dishDtos = new ArrayList<>();
+
+        for (Dish item : list) {
+            DishDto dishDto = new DishDto();
+            BeanUtils.copyProperties(item, dishDto);
+            Long dishId = item.getId();
+            LambdaQueryWrapper<DishFlavor> queryWrapper = new LambdaQueryWrapper<>();
+            queryWrapper.eq(DishFlavor::getDishId, dishId);
+            List<DishFlavor> dishFlavors = dishFlavorService.list(queryWrapper);
+            dishDto.setFlavors(dishFlavors);
+            dishDtos.add(dishDto);
+        }
+
+        return R.success(dishDtos);
     }
 
 
