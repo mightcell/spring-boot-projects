@@ -91,4 +91,20 @@ public class SetmealController {
         return R.success("套餐数据删除成功");
     }
 
+    /**
+     * 查询套餐信息
+     * @param setmeal
+     * @return 套餐列表信息
+     */
+    @GetMapping("/list")
+    public R<List<Setmeal>> list(Setmeal setmeal) {
+        LambdaQueryWrapper<Setmeal> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper
+                .eq(setmeal.getCategoryId() != null, Setmeal::getCategoryId, setmeal.getCategoryId())
+                .eq(setmeal.getStatus() != null, Setmeal::getStatus, setmeal.getStatus())
+                .orderByDesc(Setmeal::getUpdateTime);
+        List<Setmeal> list = setmealService.list(queryWrapper);
+        return R.success(list);
+    }
+
 }
