@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="867fa901-22fc-459a-87b8-af0a175726a8" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/mapper/ShoppingCartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/controller/SetmealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/entity/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/java/com/mightcell/reggie/entity/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/src/main/resources/front/api/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reggie_take_out/target/classes/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/reggie_take_out/target/classes/front/api/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +177,7 @@
       <workItem from="1675412306927" duration="6202000" />
       <workItem from="1675502345150" duration="10909000" />
       <workItem from="1675573829468" duration="11728000" />
-      <workItem from="1675682538472" duration="3124000" />
+      <workItem from="1675682538472" duration="7747000" />
     </task>
     <servers />
   </component>
